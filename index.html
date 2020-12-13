@@ -1,0 +1,228 @@
+<!--
+    Author: Faruk Imamovic
+    Class: CS412
+    Student ID: 190302086
+    Project: Resume
+    email: f.imamovic27@gmai.com
+-->
+
+<html>
+<div>
+
+    <head>
+        <title> Faruk Imamovic - CV </title>
+        <link rel="styleSheet" href="styleSheet.css">
+    </head>
+</div>
+
+<body>
+
+    <div class="parallax">
+
+        <header>
+            <div class="banner">
+                <h1>
+                    Faruk Imamovic
+                </h1>
+            </div>
+        </header>
+
+
+
+        <div class="sticky">
+            <nav class="navMenu">
+                <ul>
+                    <li> <a href="#Bio"> Bio</a></li>
+                    <li> <a href="#Education"> Education</a></li>
+                    <li> <a href="#Skills"> Skills</a></li>
+                    <li> <a href="#Languages"> Languages</a></li>
+                    <li> <a href="#References"> References</a></li>
+                    <li> <a href="#ContactMe"> Contact me </a></li>
+                    <li> <a href="https://farukim.github.io/CS412-CV-HTML/" target="_blank"> HTML only version</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="column">
+            <p>
+                <img src="images/me.jpg" alt="Picture of me" width="300" height="300" />
+            </p>
+        </div>
+        <div id="Bio"></div>
+        <div class="biopar">
+            <h2> Bio </h2>
+
+            <p>I am Faruk Imamovic and I am from <em>Sarajevo</em>, Bosnia and Herzegowina. I am an aspiring
+                Software Engineer at the
+                <a href="https://www.ius.edu.ba/" target="_blank">International University of Sarajevo</a>,
+                currently in my second year of studying.
+                As for my hobbies I enjoy spending time with my friends,
+                working out, playing videogames, cooking, reading and most of all I enjoy travelling. <br>
+                <!-- I have visited many countries, including: 
+                    <ul>
+                        <li>Croatia</li>
+                        <li>Montenegro</li>
+                        <li>Albania</li>
+                        <li>Greece</li>
+                        <li>Slovenia</li>
+                        <li>Austria</li>
+                        <li>Italy</li>
+                        <li>France</li>
+                        <li>The United Kingdom</li>
+                        <li>Monaco</li>
+                        <li>Spain</li>
+                        <li>Andora</li>
+                        <li>Tunisia</li>
+                        <li>Turkey</li>
+                        <li>Israel</li>
+                    </ul>  -->
+            </p>
+        </div>
+
+        <div class="clear" id="Education"></div>
+
+        <div class="educontainer">
+            <h2> Education </h2>
+            <div class="edurow">
+                <div class="educol">
+                    <h3>Bachelors</h3>
+                    <p> Software Engineering at <abbr title="International University of Sarajevo">
+                        IUS </abbr> 2019 - </p>
+                </div>
+                <div class="educol">
+                    <img src="images/ius.jpg" alt="Picture of IUS" width="300" height="170" title="Picture of IUS" />
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="edurow">
+                <div class="educol">
+                    <h3> High School</h3>
+                        <p> <a href="http://1gimnazija.com.ba/" target="_blank">Prva Gimnazija Sarajevo</a> 2014 - 2019</p>
+                        
+                </div>
+                <div class="educol">
+                    <img src="images/prvaGimSarajevo.jpg" alt="Picture of Prva Gimnazija Sarajevo" width="300" height="170"
+                        title="Picture of Prva Gimnazija Sarajevo" />
+                </div>
+            </div>
+        </div>
+
+
+        <div class="clear" id="Skills"></div>
+        <div id="Languages"></div>
+
+        <div class="skills">
+
+            <h2> Skills </h2>
+
+            <hr>
+
+            <ul>
+                <li> Programming in C++ </li>
+                <li> Programming in Java </li>
+                <li> Porgramming in Python </li>
+                <li> Web application development</li>
+                <li> Collaborate well in teams </li>
+            </ul>
+        </div>
+
+        <div class="lang">
+            <h2>Languages</h2>
+            <hr>
+
+            <ul>
+                <li> Bosnian - native speaker </li>
+                <li> English - C1 certified </li>
+                <li> German - B1 certified </li>
+                <li> Turkish - basic understanding </li>
+            </ul>
+        </div>
+
+        <div class="clear" id="References"></div>
+
+        <div class="refer">
+
+            <h2> References </h2>
+
+            <hr>
+            <h3> Professor Dr. Ali Abd Almisreb </h3>
+
+            <ul>
+                <li> Faculty of Engineering and Natural Sciences International University of Sarajevo </li>
+                <li> Phone: <a href="tel:+387 33 957105">+387 33 957 105</a></li>
+                <li> Email: <a href="mailto:aalmisreb@ius.edu.ba">aalmisreb@ius.edu.ba</a> </li>
+            </ul>
+        </div>
+
+        <div class="clear" id="ContactMe"></div>
+
+        <div class="contact">
+
+            <h2> Contact me: </h2>
+
+            <h3> Via form: </h3>
+
+            <form method="get" action="index.html/">
+                <label for="mail"> E-mail: </label><br>
+                <input type="email" id="mail" name=mail><br>
+
+                <label for="fname"> First name: </label><br>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="lname"> Last name: </label><br>
+                <input type="text" id="lname" name="lname"><br>
+
+                <label for="gender"> Gender: </label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male"> Male </label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female"> Female </label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other"> Other </label><br>
+
+                <label for="message"> Write your message: </label><br>
+                <textarea id="message" name="message" rows="6" cols="50"></textarea><br>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+
+        <div class="clear"></div>
+
+
+        <div>
+
+        </div>
+
+
+        <footer>
+            <div class="trademark">
+                <p>
+                    Faruk Imamovic &copy; 2020
+                </p>
+            </div>
+            <div class="social">
+                <p>
+                    My social media:
+                    <a href="https://www.facebook.com/faruk.coltimamovic" target="_blank">
+                        <img src="images/fb.jpg" alt="Link to my facebook" height=25 width=25 />
+                    </a>
+                    <a href="https://www.instagram.com/farukimamovic/" target="_blank">
+                        <img src="images/ig.jpg" alt="Link to my Instagram" height=25 width=25 />
+                    </a>
+                    <a href="mailto:f.imamovic27@gmail.com">
+                        <img src="Images/mail.jpg" alt="Link to my mail" height=25 width=25 />
+                    </a>
+                </p>
+            </div>
+        </footer>
+
+
+    </div>
+
+
+
+</body>
