@@ -347,3 +347,16 @@ footer{
     padding-right: 5%;
 }
 
+.canvas{
+    background: #eee;
+    
+}
+
+.game{
+    margin: 100px auto;
+    margin-bottom: 0;
+    position: center;
+    background-color: white;
+    width:480px;
+    height:320px:
+}
