@@ -9,6 +9,10 @@ body {
     
 } 
 
+html{
+    scroll-behavior: smooth;
+}
+
 .parallax{
     background-image: url("images/meParallaxEdit.jpg");
     min-height: 100%;
@@ -310,7 +314,7 @@ a:hover {
     width:70%;
 }
 
-.contact input[type=submit]{
+.contact button{
     background-color: white;
     padding: 5px;
     font-size: 110%;
@@ -318,8 +322,10 @@ a:hover {
     border: 4px solid rgb(117, 117, 168);
 }
 
-.contact input[type=submit]:hover{
+.contact button:hover{
+    transition: all 0.3s ease;
     background-color: skyblue;
+
 }
 
 footer{
@@ -353,10 +359,56 @@ footer{
 }
 
 .game{
+    margin:auto;
+    position: center;
+    background-color: rgba(255, 255, 255, 0.39);
+    width:480px;
+    height:320px;
+}
+
+.game-container{
     margin: 100px auto;
     margin-bottom: 0;
     position: center;
-    background-color: white;
-    width:480px;
-    height:320px:
+    background-color:  #7495A5;
+    width:50%;
+    height:400px;
+    padding: 20px;
 }
+
+.restart{
+    height:30px;
+    width: 65px;
+    position:center;
+    margin-left: 30%;
+    border: 5px solid rgba(63, 60, 60, 0.521);
+    border-radius: 10px;
+    text-align: center;
+    background-color:rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+.restart:hover{
+    cursor:pointer;
+    background-color: rgb(99, 187, 187);
+}
+
+.popup{
+    background-color: rgb(99, 187, 187);
+    color: black;
+    padding: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease;
+    transition-property: opacity;
+}
+
+.popup-visible{
+    opacity: 1;
+    z-index: 1;
+}
+

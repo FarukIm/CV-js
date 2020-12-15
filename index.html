@@ -37,8 +37,9 @@
                     <li> <a href="#Skills"> Skills</a></li>
                     <li> <a href="#Languages"> Languages</a></li>
                     <li> <a href="#References"> References</a></li>
-                    <li> <a href="#ContactMe"> Contact me </a></li>
-                    <li> <a href="https://farukim.github.io/CS412-CV-HTML/" target="_blank"> HTML only version</a></li>
+                    <li> <a href="#contact"> Contact me </a></li>
+                    <li> <a href="#game"> JS game</a></li>
+                    <li> <a href="https://farukim.github.io/CV-CS412/" target="_blank"> Previous version</a></li>
                 </ul>
             </nav>
         </div>
@@ -156,13 +157,16 @@
             </ul>
         </div>
 
-        <div class="clear"></div>
-
-        <div class="game">
-            <canvas id="myCanvas" width="480" height="320"></canvas>
+        <div class="clear" id = "game"></div>
+        <div class="game-container">
+            <div class="game">
+                <canvas id="myCanvas" width="480" height="320"></canvas>
+            </div>
+            <br>
+            <button type="button" id="restart" class="restart" onclick="reset()">Play</button>
         </div>
-
-        <div class="clear" id="ContactMe"></div>
+            
+        <div class="clear" id=""></div>
 
         <div class="contact" id="contact">
 
@@ -170,7 +174,7 @@
 
             <h3> Via form: </h3>
 
-            <form method="get" action="index.html/">
+            <form name="contactform" id="contactform">
                 <label for="mail" id="mail"> E-mail: </label><br>
                 <input type="email" id="mail" name=mail><br>
 
@@ -191,18 +195,17 @@
                 <label for="message" id="message"> Write your message: </label><br>
                 <textarea id="message" name="message" rows="6" cols="50"></textarea><br>
 
-                <input type="submit" value="Submit">
+                <button type="submit" id="form_submit"> Submit </button>
 
             </form>
         </div>
 
-        <div class="clear"></div>
-
-
-        <div>
-
+        <div id="popup" class="popup">
+            Thank you for submitting!
+            <button onclick="closePopup()" class="close">&times;</button>
         </div>
 
+        <div class="clear"></div>
 
         <footer>
             <div class="trademark">
